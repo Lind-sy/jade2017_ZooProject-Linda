@@ -8,16 +8,20 @@ public class Main {
     public static void main(String[] args) {
 
         Customer newCustomer = new Customer();
-        Ticket newTicket = new GeneralTickets();
-        Ticket newTicket2 = new ButterflyHouseTickets();
+        Ticket generalTicket = new GeneralTickets();
+        Ticket butterflyHouseTicket = new ButterflyHouseTickets();
+        Ticket pettingZoneTicket = new PettingZoneTickets();
         Shop shop = new Shop();
-        
+
        // shop.printCustomerAllTicketInformation(newCustomer.getTickets());
 
-        shop.sellTicket(newCustomer, newTicket);
-        shop.sellTicket(newCustomer, newTicket2);
+        shop.sellTicket(newCustomer, generalTicket);
+        shop.sellTicket(newCustomer, butterflyHouseTicket);
 
         shop.printOneCustomerTicketInformation(newCustomer.getTickets().get(0));
         shop.printCustomerAllTicketInformation(newCustomer.getTickets());
+
+        Customer newCustomer2 = new Customer();
+        shop.sellTicket(newCustomer2, pettingZoneTicket);
     }
 }
