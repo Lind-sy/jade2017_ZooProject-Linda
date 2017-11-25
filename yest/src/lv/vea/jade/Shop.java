@@ -25,13 +25,13 @@ public class Shop {
         }
     }
 
-    public void printOneCustomerTicketInformation(Ticket ticket) {
-        if (ticket != null) {
-                System.out.println((ticket.getName()
+    public void printOneCustomerTicketInformation(List<Ticket> tickets, int ticketNumber) {
+        if (!tickets.isEmpty() && tickets.size()>ticketNumber && ticketNumber > 0) {
+                System.out.println((tickets.get(ticketNumber - 1)
                         + "ticket is valid:"
-                        + isTicketValid(ticket)));
+                        + isTicketValid(tickets.get(ticketNumber - 1))));
         } else {
-            System.out.println("Customer has no tickets!");
+            System.out.println("Customer does not have a ticket with this number!");
         }
     }
 

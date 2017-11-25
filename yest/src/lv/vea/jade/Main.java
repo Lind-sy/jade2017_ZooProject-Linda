@@ -18,7 +18,7 @@ public class Main {
         shop.sellTicket(newCustomer, generalTicket);
         shop.sellTicket(newCustomer, butterflyHouseTicket);
 
-        shop.printOneCustomerTicketInformation(newCustomer.getTickets().get(0));
+        shop.printOneCustomerTicketInformation(newCustomer.getTickets(),1);
         shop.printCustomerAllTicketInformation(newCustomer.getTickets());
 
         Customer newCustomer2 = new Customer();
