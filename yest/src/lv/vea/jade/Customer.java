@@ -10,10 +10,14 @@ public class Customer {
     private static List<Ticket> tickets = new ArrayList<>();
 
     public static List<Ticket> getTickets() {
-        return tickets;
+        if (!tickets.isEmpty()) {
+            return tickets;
+        } else {
+            throw new IllegalStateException("There are no tickets for this Customer!");
+        }
     }
 
     public static void addTicket(Ticket ticket) {
-       tickets.add(ticket);
+        tickets.add(ticket);
     }
 }

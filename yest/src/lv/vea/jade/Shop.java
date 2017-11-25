@@ -36,7 +36,7 @@ public class Shop {
     }
 
     public void printCustomerAllTicketInformation(List<Ticket> tickets) {
-        if (tickets.size() != 0) {
+        if (!tickets.isEmpty()) {
             for (Ticket ticket : tickets) {
                 System.out.println((ticket.getName()
                         + "ticket is valid:"

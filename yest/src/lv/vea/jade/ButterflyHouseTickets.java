@@ -7,6 +7,7 @@ import java.util.Date;
  */
 public class ButterflyHouseTickets extends Ticket {
     public ButterflyHouseTickets() {
+
         super(30.00, "ButterflyHouse");
     }
 }

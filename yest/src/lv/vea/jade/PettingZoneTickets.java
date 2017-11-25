@@ -7,6 +7,7 @@ import java.util.Date;
  */
 public class PettingZoneTickets extends Ticket {
     public PettingZoneTickets() {
+
         super(70.00, "PettingZone");
     }
 }

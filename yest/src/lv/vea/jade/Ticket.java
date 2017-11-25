@@ -24,26 +24,32 @@ abstract class Ticket {
     }
 
     public Date getDate() {
+
         return date;
     }
 
     public void setDate(Date date) {
+
         this.date = date;
     }
 
     public double getPrice() {
+
         return price;
     }
 
     public void setPrice(double price) {
+
         this.price = price;
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 }
