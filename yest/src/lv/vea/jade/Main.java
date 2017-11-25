@@ -12,11 +12,13 @@ public class Main {
         Ticket newTicket2 = new ButterflyHouseTickets();
         Shop shop = new Shop();
 
-        shop.printCustomerTicketInformation(newCustomer.getTickets());
+
+        shop.printCustomerAllTicketInformation(newCustomer.getTickets());
 
         shop.sellTicket(newCustomer, newTicket);
         shop.sellTicket(newCustomer, newTicket2);
 
-        shop.printCustomerTicketInformation(newCustomer.getTickets());
+        shop.printOneCustomerTicketInformation(newCustomer.getTickets().get(0));
+        shop.printCustomerAllTicketInformation(newCustomer.getTickets());
     }
 }

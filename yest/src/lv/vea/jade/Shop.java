@@ -1,5 +1,7 @@
 package lv.vea.jade;
 
+import sun.invoke.empty.Empty;
+
 import java.util.Calendar;
 import java.util.List;
 
@@ -23,7 +25,17 @@ public class Shop {
         }
     }
 
-    public void printCustomerTicketInformation(List<Ticket> tickets) {
+    public void printOneCustomerTicketInformation(Ticket ticket) {
+        if (ticket != null) {
+                System.out.println((ticket.getName()
+                        + "ticket is valid:"
+                        + isTicketValid(ticket)));
+        } else {
+            System.out.println("Customer has no tickets!");
+        }
+    }
+
+    public void printCustomerAllTicketInformation(List<Ticket> tickets) {
         if (tickets.size() != 0) {
             for (Ticket ticket : tickets) {
                 System.out.println((ticket.getName()
