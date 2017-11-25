@@ -11,9 +11,8 @@ public class Main {
         Ticket newTicket = new GeneralTickets();
         Ticket newTicket2 = new ButterflyHouseTickets();
         Shop shop = new Shop();
-
-
-        shop.printCustomerAllTicketInformation(newCustomer.getTickets());
+        
+       // shop.printCustomerAllTicketInformation(newCustomer.getTickets());
 
         shop.sellTicket(newCustomer, newTicket);
         shop.sellTicket(newCustomer, newTicket2);
